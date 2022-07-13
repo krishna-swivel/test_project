@@ -33,29 +33,30 @@ class Search extends Component {
     return (
       <div>
         <form ref={this.formRef} onSubmit={this.handleSubmit}>
-          <Box
-            sx={{
-              width: 500,
-              maxWidth: "100%",
-            }}
-            style={{ marginLeft: 50 }}
-          >
-            <Stack spacing={3} direction="row">
-              <TextField
-                name="query"
-                type="text"
-                fullWidth
-                label="Search here"
-                id="fullWidth"
-                value={this.state.formData.query}
-                onChange={this.handleChange}
-              />
+          <Grid md={6} sx={12}>
+            <Box
+              sx={{
+                width: 500,
+                maxWidth: "100%",
+              }}
+            >
+              <Stack spacing={3} direction="row">
+                <TextField
+                  name="query"
+                  type="text"
+                  fullWidth
+                  label="Search here"
+                  id="fullWidth"
+                  value={this.state.formData.query}
+                  onChange={this.handleChange}
+                />
 
-              <Button variant="contained" type="submit">
-                Search
-              </Button>
-            </Stack>
-          </Box>
+                <Button variant="contained" type="submit">
+                  Search
+                </Button>
+              </Stack>
+            </Box>
+          </Grid>
         </form>
       </div>
     );

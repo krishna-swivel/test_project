@@ -157,7 +157,7 @@ class SpellDetails extends Component {
           </>
         ) : (
           <>
-            <p>Loading spell details...</p>
+            <h1 style={{ color: "green" }}>Loading spell details...</h1>
           </>
         )}
       </>

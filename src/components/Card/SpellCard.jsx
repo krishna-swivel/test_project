@@ -42,9 +42,10 @@ const RenderComponent = ({ spell }) => {
           to={{
             pathname: `/spell/${spell.index}`,
           }}
+          style={{ textDecoration: "none" }}
         >
-          <Button size="small" color="primary">
-            Click
+          <Button size="small" color="primary" variant="contained">
+            For info
           </Button>
         </Link>
       </CardActions>
