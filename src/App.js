@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import React, { useState } from "react";
+import { Route } from "react-router-dom";
+import SpellSearching from "./pages/SpellSearch/SpellSearch";
+import SpellDetails from "./pages/SpellDetails/SpellDetails";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="app-title">Hi Welcome to the Spell Checker Game</h1>
+
+      <Route
+        exact
+        path="/spell/:name"
+        render={({ location, match }) => (
+          <SpellDetails location={location} match={match} />
+        )}
+      />
+
+      <Route exact path="/" render={() => <SpellSearching />} />
     </div>
   );
 }
