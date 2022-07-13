@@ -22,7 +22,6 @@ class SpellSearching extends Component {
   render() {
     return (
       <>
-        <h3>Spell Search</h3>
         <Search handleSpellSearch={this.handleSpellSearch} />
         {this.state.spells.length ? (
           <>
@@ -31,7 +30,7 @@ class SpellSearching extends Component {
             ))}
           </>
         ) : (
-          <h3>Please search for a spell!</h3>
+          <h1 style={{ color: "red" }}>Please search for a spell!</h1>
         )}
       </>
     );
@@ -39,30 +38,3 @@ class SpellSearching extends Component {
 }
 
 export default SpellSearching;
-// function SpellSearching() {
-//   const [spells, setSpells] = useState([]);
-
-//   const handleSearch = async (data) => {
-//     const spells = await spellSearch(data);
-//     console.log(spells);
-//     setSpells({ spells: spells.results });
-//   };
-
-//   return (
-//     <>
-//       <h3>Search here !!!</h3>
-//       <Search handleSpellSearch={handleSearch} />
-//       {spells.length ? (
-//         <>
-//           {spells.map((spell) => (
-//             <SpellCard key={spell.index} spell={spell} />
-//           ))}
-//         </>
-//       ) : (
-//         <h3>Please search for a spell!</h3>
-//       )}
-//     </>
-//   );
-// }
-
-// export default SpellSearching;

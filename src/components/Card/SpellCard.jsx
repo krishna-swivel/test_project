@@ -61,8 +61,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const SpellCard = (props) => {
-  const [spacing, setSpacing] = React.useState(2);
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <h1 style={{ marginTop: 20 }}>{props.spell.name}</h1>

@@ -1,6 +1,6 @@
 /**
  * Define the Api Calls.
- * Improvements -Using redux for the apis
+ * Improvements -Using redux for the apis and thunk for middleware
  */
 
 const baseUrl = "https://www.dnd5eapi.co";

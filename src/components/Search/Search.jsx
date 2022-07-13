@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
 
 class Search extends Component {
   state = {
@@ -28,13 +33,29 @@ class Search extends Component {
     return (
       <div>
         <form ref={this.formRef} onSubmit={this.handleSubmit}>
-          <input
-            name="query"
-            type="text"
-            value={this.state.formData.query}
-            onChange={this.handleChange}
-          />
-          <button type="submit">Search</button>
+          <Box
+            sx={{
+              width: 500,
+              maxWidth: "100%",
+            }}
+            style={{ marginLeft: 50 }}
+          >
+            <Stack spacing={3} direction="row">
+              <TextField
+                name="query"
+                type="text"
+                fullWidth
+                label="Search here"
+                id="fullWidth"
+                value={this.state.formData.query}
+                onChange={this.handleChange}
+              />
+
+              <Button variant="contained" type="submit">
+                Search
+              </Button>
+            </Stack>
+          </Box>
         </form>
       </div>
     );
