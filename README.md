@@ -21,3 +21,13 @@ Project Codebase
 ## Used Material ui for styling.
 
 ## Mobile Responsive
+
+Project Functionalities
+
+## Enter the search for to get all the words
+
+## Validations added if the word is not valid
+
+## Enter the valid work and find results
+
+## Loading Screen and pass the description for the word
