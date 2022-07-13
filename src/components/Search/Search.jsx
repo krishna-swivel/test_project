@@ -33,7 +33,7 @@ class Search extends Component {
     return (
       <div>
         <form ref={this.formRef} onSubmit={this.handleSubmit}>
-          <Grid md={6} sx={12}>
+          <Grid md={12} sx={12}>
             <Box
               sx={{
                 width: 500,
@@ -46,7 +46,6 @@ class Search extends Component {
                   type="text"
                   fullWidth
                   label="Search here"
-                  id="fullWidth"
                   value={this.state.formData.query}
                   onChange={this.handleChange}
                 />
