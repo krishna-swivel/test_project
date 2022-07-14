@@ -8,10 +8,10 @@ function CommonButton({ info, type, onClick }) {
         size="small"
         variant="contained"
         type={type ? type : ""}
-        style={{ maxWidth: 10 }}
+        style={{ width: 100 }}
         onClick={onClick}
       >
-        {info}
+        {info ? info : "CLICK"}
       </Button>
     </>
   );
