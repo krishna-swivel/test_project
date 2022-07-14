@@ -6,7 +6,7 @@ In the project directory, you can run:
 
 ### Note
 
-`use fetch` can use `axios`
+used `fetch` can use `axios`
 The entire project could be tranfered to a global state management
 but based on the best practises this project is a small one and there are no complex states to manage.
 
@@ -20,6 +20,6 @@ Project Codebase
 
 Project Functionalities
 
-- Clcik the search for to get all the words
+- Click the search for to get all the words
 - Validations added if the word is not valid
 - Enter the valid word and find results
