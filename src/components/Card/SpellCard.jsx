@@ -8,11 +8,12 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import { CardActionArea, CardActions } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { experimentalStyled as styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
+import CommonButton from "../Button/CommonButton";
 
 const RenderComponent = ({ spell }) => {
   return (
@@ -45,9 +46,7 @@ const RenderComponent = ({ spell }) => {
           }}
           style={{ textDecoration: "none" }}
         >
-          <Button size="small" color="primary" variant="contained">
-            For info
-          </Button>
+          <CommonButton info="More" />
         </Link>
       </CardActions>
     </Card>

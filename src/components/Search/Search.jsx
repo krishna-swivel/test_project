@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
+import CommonButton from "../Button/CommonButton";
 import Grid from "@mui/material/Grid";
 
 class Search extends Component {
@@ -32,7 +33,7 @@ class Search extends Component {
   render() {
     return (
       <div>
-        <form ref={this.formRef} onSubmit={this.handleSubmit}>
+        <form ref={this.formRef}>
           <Grid container>
             <Grid sx={12} md={12}>
               <Box
@@ -52,9 +53,11 @@ class Search extends Component {
                     onChange={this.handleChange}
                   />
 
-                  <Button variant="contained" type="submit">
-                    Search
-                  </Button>
+                  <CommonButton
+                    info="Search"
+                    type="submit"
+                    onClick={this.handleSubmit}
+                  />
                 </Stack>
               </Box>
             </Grid>
