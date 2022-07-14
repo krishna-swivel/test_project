@@ -12,7 +12,7 @@ but based on the best practises this project is a small one and there are no com
 
 Project Codebase
 
-- Developed used class components and it canbe converted into functional
+- Developed used class components and it canbe converted into functional. There is a converted version added of class components and name called SpellDetailsHook.jsx
 - Used React lifecycle methods.
 - React Router for the navigation
 - Used Material ui for styling.
