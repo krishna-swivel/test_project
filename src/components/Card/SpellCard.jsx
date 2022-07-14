@@ -21,7 +21,8 @@ const RenderComponent = ({ spell }) => {
         maxWidth: 400,
         marginBottom: 10,
         marginTop: 10,
-        marginLeft: 5,
+        marginLeft: 4,
+        justifyContent: "space-between",
       }}
     >
       <CardActionArea>
@@ -65,7 +66,7 @@ const SpellCard = (props) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <h1 style={{ marginTop: 20 }}>{props.spell.name}</h1>
-      <Grid container spacing={2}>
+      <Grid container spacing={6}>
         <Grid item xs={12} sm={6} md={4}>
           <RenderComponent spell={props.spell} />
         </Grid>
