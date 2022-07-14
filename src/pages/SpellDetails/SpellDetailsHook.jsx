@@ -13,8 +13,8 @@ function SpellDetailsHook(props) {
     spellDetails: {},
   });
 
-  const getData = async () => {
-    const spellDetails = await getSpellDetails(props.match.params.name);
+  const getData = () => {
+    const spellDetails = getSpellDetails(props.match.params.name);
     console.log(spellDetails);
     setState({ spellDetails: spellDetails });
     console.log(state.spellDetails);
