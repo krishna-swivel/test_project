@@ -12,15 +12,14 @@ but based on the best practises this project is a small one and there are no com
 
 Project Codebase
 
-1.Developed used class components and it canbe converted into functional
-2.Used React lifecycle methods.
-3.React Router for the navigation
-4.Used Material ui for styling.
-5.Mobile Responsive
+- Developed used class components and it canbe converted into functional
+- Used React lifecycle methods.
+- React Router for the navigation
+- Used Material ui for styling.
+- Mobile Responsive
 
 Project Functionalities
 
-1.Enter the search for to get all the words
-2.Validations added if the word is not valid
-3.Enter the valid work and find results
-4.Loading Screen and pass the description for the word
+- Clcik the search for to get all the words
+- Validations added if the word is not valid
+- Enter the valid word and find results
