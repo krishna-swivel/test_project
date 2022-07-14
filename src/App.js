@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Route } from "react-router-dom";
 import SpellSearching from "./pages/SpellSearch/SpellSearch";
 import SpellDetails from "./pages/SpellDetails/SpellDetails";
+// import SpellDetailsHook from "./pages/SpellDetails/SpellDetailsHook";
 function App() {
   return (
     <div className="App">
